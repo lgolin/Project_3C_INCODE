@@ -9,15 +9,15 @@ block content
         th UserId
         th Username
         th Day 
-        th Start at
-        th End at
+        th Start time
+        th End time
       br
     tbody
       each schedule in schedules
         tr
-          td=schedule.ID
+          td=schedule.id
           td=schedule.username
           td=days[schedule.day-1]
-          td=schedule.start
-          td=schedule.end
+          td=schedule.start_time 
+          td=schedule.end_time
         br
