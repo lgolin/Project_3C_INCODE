@@ -1,0 +1,27 @@
+doctype html 
+html
+   head 
+     meta(charset='UTF-8')
+     meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+     title #{title}
+     style.
+            body {
+                font-family: Verdana;
+                font-size: 15px;
+                background:#D3D3D3 ;
+                text-align:center;
+            }
+   body 
+      header(style = "height:100px;background-color:white")
+        h1(style = "color:Blue;text-align:center") Schedule Website
+        block navBar
+                a(href="/" style = "height:20px;padding-right:30px")
+                    col-md-3 Schedules   
+                a(href="/new" style = "height:20px;padding-right:30px")
+                    col-md-3 Add New Schedule    
+                
+      block content 
+      br
+      hr
+      footer  
+        p copyright &copy; 2021

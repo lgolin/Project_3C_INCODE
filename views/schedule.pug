@@ -1,0 +1,23 @@
+extends layout 
+
+block content
+  div
+   table.table.table-hover(style="width:80%;border:2px solid;margin-left:100px;background-color: #f2f2f2")
+    thead
+      h3 #{title}
+      tr
+        th UserId
+        th Username
+        th Day 
+        th Start at
+        th End at
+      br
+    tbody
+      each schedule in schedules
+        tr
+          td=schedule.ID
+          td=schedule.username
+          td=days[schedule.day-1]
+          td=schedule.start
+          td=schedule.end
+        br

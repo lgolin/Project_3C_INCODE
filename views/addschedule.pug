@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div.text-center
+    form(action='http://localhost:3000/new', method='POST')
+        label(for='username') Username:
+        input(name='username', value='', type='varchar')
+        label(for='day') Day:
+        input(name='day', value='',min='1',max='7', type='number')
+        label(for='start_at') Start at:
+        input(name='start', type='time')
+        label(for='end_at') End at: 
+        input(name='end', type='time')
+        button(type='submit') Submit
