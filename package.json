@@ -1,0 +1,25 @@
+{
+  "name": "Project_3C_INCODE",
+  "version": "1.0.0",
+  "description": "🚩 Step 1 : Build your database\r The schedule data will be stored in a database: MySQL. We call MySQL a relational database because the data is formatted according to a very precise schema, defined before adding any data.\r Creating a database therefore starts by elaborating the data schema, i.e. what data will be stored and in what form.\r This step is crucial because it determines the right logic for your application. For this first project we have developed the data schema for you, but in the future that tasks will be yours.\r So you need to create a MySQL database with Node.Js and connect to it (see here if you don't know how to do this) before creating your table.\r For this project, you need a 'schedule' table.\r Your 'schedule' table will be composed of the following fields: \r - a unique key (ID),\r - a username,\r - the day of the week (1 for Monday, 2 for Tuesday... 7 for Sunday),\r - a start time\r - and an end time (both TIME type).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgolin/Project_3C_INCODE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lgolin/Project_3C_INCODE/issues"
+  },
+  "homepage": "https://github.com/lgolin/Project_3C_INCODE#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "pug": "^3.0.2"
+  }
+}
